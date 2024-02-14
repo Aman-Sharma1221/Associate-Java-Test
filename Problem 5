@@ -1,0 +1,39 @@
+import java.util.*;
+public class Solution
+{
+    public static void main(String args[])
+    {
+        int a[][],counteven=0,countodd=0;
+        a=new int[3][3]; //declearing the 3*3 array
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the array elements");
+        for(int i=0;i< 3;i++)
+        {
+            for(int j=0;j< 3;j++)
+            {
+                a[i][j]=sc.nextInt(); // taking the element from the user
+            }
+        }
+        for(int i=0;i< 3;i++)
+        {
+            for(int j=0;j< 3;j++)
+            {
+                if(a[i][j]%2==0)
+                {
+                    counteven+=a[i][j]; //count the sum of even elements
+                }
+                else
+                {
+                    countodd+=a[i][j]; //count the sum of odd elements
+                }
+            }
+        }
+        if(counteven==countodd) //check the array is Special or not 
+        {
+            System.out.println("Special array");
+        }
+        else{
+            System.out.println("Not a Special array");
+        }
+    }
+}
