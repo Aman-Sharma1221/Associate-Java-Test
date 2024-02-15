@@ -1,3 +1,5 @@
+/* Problem -2 Write a program that accepts an array of numbers, sorts them in descending order
+and prints the sorted array. */
 import java.util.Scanner;
 public class Solution {
         public static void main(String[] args) {
