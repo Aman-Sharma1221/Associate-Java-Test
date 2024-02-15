@@ -1,3 +1,6 @@
+/* Problem 6 - Write a program that accepts a principal amount, an yearly rate of interest, number
+of months and computes the total interest earned on the principal amount at the
+provided rate of interest, compounded monthly */
 import java.util.Scanner;
 public class Solution
 {
