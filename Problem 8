@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the time in string (e.g., 4h 20m 10s): "); // take input time in string format
+        String time = input.nextLine();
+        int totalSeconds = convert(time); //it store the converted time into seconds
+        System.out.println("Total seconds: " + totalSeconds);
+    }
+    public static int convert(String time) //method to calculate the no. of seconds
+    {
+        String[] parts = time.split("\\s+"); //to divide the time format into parts
+        int hours = 0, minutes = 0, seconds = 0;
+        for (String part : parts)
+        {
+            if (part.endsWith("h"))
+            {
+                hours = Integer.parseInt(part.substring(0, part.length() - 1)); //to extract the no. of hours
+            } else if (part.endsWith("m"))
+            {
+                minutes = Integer.parseInt(part.substring(0, part.length() - 1)); //to extract the no. of minutes
+            } else if (part.endsWith("s"))
+            {
+                seconds = Integer.parseInt(part.substring(0, part.length() - 1)); //to extract the no. of seconds
+            }
+        }
+        return hours * 3600 + minutes * 60 + seconds; //to calculate the total seconds
+    }
+}
