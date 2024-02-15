@@ -1,3 +1,5 @@
+/* Problem -10 Write a program that finds the sum of the smallest and largest numbers in an array of
+numbers.*/
 import java.util.Scanner;
 public class Solution {
         public static void main(String[] args)
