@@ -4,11 +4,11 @@ public class Solution
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the principle amount ");
+        System.out.print("Enter the principle amount "); //take principle amt from user
         double principle = sc.nextDouble();
-        System.out.print(" Enter the rate of Intrest ");
+        System.out.print(" Enter the rate of Intrest "); //take rate of intrest from user
         double rate = sc.nextDouble();
-        System.out.print(" Enter the time period "); 
+        System.out.print(" Enter the time period "); //take the time period in month
         int time = sc.nextInt();
         double A = (principle * Math.pow((1 + (rate / 1200)), (time))); // Formula to calculate compount intrest CI = P(1 + (r/1200))12t - P
         double CI = A - principle;
