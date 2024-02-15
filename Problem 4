@@ -1,3 +1,6 @@
+/* Problem-4 Write a program that accepts a string, counts the number of uppercase and
+lowercase letters in the string and prints whether the string contains equal number of
+uppercase and lowercase letters. */
 import java.util.Scanner;
 public class Solution {
         public static void main(String[] args) {
