@@ -6,14 +6,14 @@ public class Solution {
                 int lwr=0,upr=0,len = str.length();
                 for (int i = 0; i < len; i++)
                 {
-                        Character c = str.charAt(i);
+                        Character c = str.charAt(i); //it extract the each element from the string to check
                         if (Character.isLowerCase(c))
                         {
-                                lwr++;
+                                lwr++; //it count the no. of lower case characters
                         }
                         else if (Character.isUpperCase(c))
                         {
-                                upr++;
+                                upr++; //it count the no. of upper case characters
                         }
                 }
                 System.out.println("Number of UpperCase are : "+upr);
