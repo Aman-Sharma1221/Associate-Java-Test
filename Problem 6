@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Solution
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the principle amount ");
+        double principle = sc.nextDouble();
+        System.out.print(" Enter the rate of Intrest ");
+        double rate = sc.nextDouble();
+        System.out.print(" Enter the time period "); 
+        int time = sc.nextInt();
+        double A = (principle * Math.pow((1 + (rate / 1200)), (time))); // Formula to calculate compount intrest CI = P(1 + (r/1200))12t - P
+        double CI = A - principle;
+        System.out.println("Compound Interest is "+ CI);
+    }
+}
