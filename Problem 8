@@ -1,3 +1,6 @@
+/* Problem 8- Write a program that accepts a string such a “4h 20m 10s” and prints the total
+number of seconds it represents. The string above will result in 4 x 3600 + 20 x 60 +
+10 = 15610 seconds.*/
 import java.util.Scanner;
 public class Solution
 {
